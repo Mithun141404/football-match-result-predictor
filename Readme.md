@@ -1,21 +1,21 @@
 <div align="center">
 
-# 🎤 Tamil Speech to Sign Language Converter ✋
+# ⚽ Football Match Predictor 📊
 
-### *Bridging Communication Through AI-Powered Tamil Speech Recognition*
+### *AI-Powered Football Match Outcome Prediction using Machine Learning*
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/AI-Wav2Vec2-green?style=for-the-badge&logo=artificial-intelligence&logoColor=white" alt="AI">
-  <img src="https://img.shields.io/badge/Tamil-Language-orange?style=for-the-badge&logo=google-translate&logoColor=white" alt="Tamil">
-  <img src="https://img.shields.io/badge/Sign_Language-Accessible-purple?style=for-the-badge&logo=accessibility&logoColor=white" alt="Accessible">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/ML-Scikit--Learn-orange?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="ML">
+  <img src="https://img.shields.io/badge/Football-Prediction-green?style=for-the-badge&logo=football&logoColor=white" alt="Football">
+  <img src="https://img.shields.io/badge/Accuracy-High-red?style=for-the-badge&logo=target&logoColor=white" alt="Accuracy">
 </p>
 
 <p align="center">
-  <strong>Transform spoken Tamil words into beautiful sign language representations in real-time</strong>
+  <strong>Predict football match outcomes with multiple ML algorithms and interactive visualizations</strong>
 </p>
 
-![Demo](https://via.placeholder.com/800x400/1a1a2e/eee?text=Tamil+Speech+to+Sign+Demo)
+![Demo](https://via.placeholder.com/800x400/2c3e50/ecf0f1?text=Football+Match+Predictor+Dashboard)
 
 </div>
 
@@ -28,21 +28,21 @@
 <td width="50%">
 
 ### 🎯 **Core Capabilities**
-- 🗣️ **Real-time Speech Recognition**
-- 🔤 **Comprehensive Tamil Character Support**
-- 🔢 **Smart Number Conversion**
-- 🖼️ **Visual Sign Language Display**
-- ⚡ **Lightning Fast Processing**
+- ⚽ **Match Outcome Prediction** (Win/Draw/Loss)
+- 🤖 **Multiple ML Algorithms**
+- 📊 **Probability Analysis**
+- 💾 **Model Export & Import**
+- 📈 **Interactive Visualizations**
 
 </td>
 <td width="50%">
 
-### 🎨 **User Experience**
-- 🌙 **Modern Dark Theme Interface**
-- 📱 **Responsive Layout**
-- 🎧 **Built-in Audio Recording**
-- 🧹 **One-click Clear Function**
-- 🔄 **Seamless Mode Switching**
+### 🔬 **Machine Learning**
+- 🌲 **Random Forest Classifier**
+- 📈 **Logistic Regression**
+- 🎯 **Naive Bayes**
+- 📊 **F1-Score & Accuracy Metrics**
+- 🔄 **Cross-Validation Ready**
 
 </td>
 </tr>
@@ -54,36 +54,32 @@
 
 ### **Prerequisites**
 ```bash
-Python 3.7+ | Microphone Access | Internet Connection (first run)
+Python 3.8+ | Football Dataset | Basic ML Knowledge
 ```
 
 ### **Installation**
 ```bash
 # 1️⃣ Clone the repository
 git clone <repository-url>
-cd tamil-speech-to-sign
+cd football-match-predictor
 
 # 2️⃣ Install dependencies
 pip install -r requirements.txt
 
-# 3️⃣ Set up sign images directory
-mkdir tamil_alphabets
-# Add your Tamil sign language images here
+# 3️⃣ Add your dataset
+# Place season-1819.csv in the root directory
 
-# 4️⃣ Run the application
-python tamil_speech_to_sign.py
+# 4️⃣ Run the predictor
+python match_predictor.py
 ```
 
 ### **Requirements File**
 ```txt name=requirements.txt
-tkinter
-pillow>=9.0.0
-sounddevice>=0.4.0
-scipy>=1.7.0
-torch>=1.11.0
-transformers>=4.20.0
-torchaudio>=0.11.0
+pandas>=1.3.0
 numpy>=1.21.0
+scikit-learn>=1.0.0
+matplotlib>=3.4.0
+joblib>=1.1.0
 ```
 
 ---
@@ -96,141 +92,204 @@ numpy>=1.21.0
 
 ```mermaid
 graph LR
-    A[🎤 Click Record] --> B[🗣️ Speak Tamil] --> C[✨ View Signs]
+    A[📊 Load Data] --> B[🤖 Train Models] --> C[⚽ Predict Match]
     
-    style A fill:#4CAF50
-    style B fill:#2196F3  
-    style C fill:#FF9800
+    style A fill:#3498db
+    style B fill:#e74c3c  
+    style C fill:#2ecc71
 ```
 
 </div>
 
-| Button | Function | Duration |
-|--------|----------|----------|
-| **🎤 Words to Sign** | Record Tamil words/sentences | 4 seconds |
-| **🔢 Numbers to Sign** | Record Tamil numbers | 4 seconds |
-| **🧹 Clear** | Reset display and transcription | Instant |
+### **Input Parameters**
+
+| Parameter | Description | Example |
+|-----------|-------------|---------|
+| **🏠 Home Team Encoded** | Numerical ID for home team | `15` |
+| **✈️ Away Team Encoded** | Numerical ID for away team | `8` |
+| **⚽ HTHG** | Home Team Half-Time Goals | `2` |
+| **⚽ HTAG** | Away Team Half-Time Goals | `0` |
+| **🎯 HS** | Home Team Total Shots | `18` |
+| **🎯 AS** | Away Team Total Shots | `12` |
+| **🎯 HST** | Home Team Shots on Target | `6` |
+| **🎯 AST** | Away Team Shots on Target | `4` |
+| **🔴 HR** | Home Team Red Cards | `0` |
+| **🔴 AR** | Away Team Red Cards | `1` |
 
 ---
 
-## 📝 **Supported Characters**
-
-<details>
-<summary><strong>🔤 Tamil Vowels (உயிர்)</strong></summary>
-
-```
-அ  ஆ  இ  ஈ  உ  ஊ  எ  ஏ  ஐ  ஒ  ஓ  ஔ  ஃ
-```
-
-</details>
-
-<details>
-<summary><strong>🔤 Tamil Consonants (மெய்)</strong></summary>
-
-```
-க  ங  ச  ஞ  ட  ண  த  ந  ப  ம  ய  ர  ல  வ  ழ  ள  ற  ன
-```
-
-</details>
-
-<details>
-<summary><strong>🔢 Numbers & Digits</strong></summary>
-
-**Tamil Digits:** ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯
-
-**English Digits:** 0 1 2 3 4 5 6 7 8 9
-
-**Tamil Words:** ஒன்று, இரண்டு, மூன்று, நான்கு, ஐந்து, ஆறு, ஏழு, எட்டு, ஒன்பது
-
-</details>
-
----
-
-## ⚙️ **Technical Architecture**
+## 📊 **Machine Learning Models**
 
 <div align="center">
 
 ```mermaid
 graph TB
-    A[🎤 Audio Input] --> B[🔊 Sound Processing]
-    B --> C[🤖 Wav2Vec2 Model]
-    C --> D[📝 Tamil Transcription]
-    D --> E[🔤 Character Splitting]
-    E --> F[🖼️ Sign Image Display]
+    A[📊 Football Data] --> B[🔄 Data Preprocessing]
+    B --> C[🤖 Model Training]
+    C --> D[📈 Logistic Regression]
+    C --> E[🎯 Naive Bayes]
+    C --> F[🌲 Random Forest]
+    D --> G[📊 Prediction Results]
+    E --> G
+    F --> G
+    G --> H[📈 Visualization]
     
-    style A fill:#e1f5fe
-    style C fill:#f3e5f5
-    style F fill:#e8f5e8
+    style A fill:#e8f4fd
+    style C fill:#fff2e8
+    style G fill:#e8f6e8
+    style H fill:#fce8f3
 ```
 
 </div>
 
-### **🧠 AI Model Specifications**
+### **🎯 Model Performance Metrics**
 
-| Component | Specification |
-|-----------|--------------|
-| **Model** | `Amrrs/wav2vec2-large-xlsr-53-tamil` |
-| **Framework** | Hugging Face Transformers |
-| **Language** | Tamil (தமிழ்) |
-| **Sample Rate** | 16kHz |
-| **Processing** | CPU Optimized |
+| Model | Type | Strengths |
+|-------|------|-----------|
+| **📈 Logistic Regression** | Linear Classifier | Fast, interpretable, probabilistic |
+| **🎯 Naive Bayes** | Probabilistic | Works well with small datasets |
+| **🌲 Random Forest** | Ensemble Method | High accuracy, handles overfitting |
 
 ---
 
 ## 🏗️ **Project Structure**
 
 ```
-📦 tamil-speech-to-sign/
-├── 📄 tamil_speech_to_sign.py    # 🚀 Main application
+📦 football-match-predictor/
+├── 📄 match_predictor.py         # 🚀 Main prediction script
 ├── 📄 requirements.txt           # 📋 Dependencies
 ├── 📄 README.md                  # 📖 This file
-├── 📁 tamil_alphabets/           # 🖼️ Sign language images
-│   ├── 🖼️ அ.jpg
-│   ├── 🖼️ ஆ.jpg
-│   ├── 🖼️ க.jpg
-│   └── 🖼️ ... (other characters)
-└── 📄 output.wav                 # 🎵 Temporary audio file
+├── 📊 season-1819.csv           # 📈 Training dataset
+├── 📁 exportedModels/           # 💾 Saved ML models
+│   └── 📄 lr                    # 📈 Logistic regression model
+└── 📊 prediction_charts/        # 📊 Generated visualizations
 ```
 
 ---
 
-## 🎨 **Customization**
+## 📈 **Dataset Schema**
 
 <details>
-<summary><strong>🖼️ Adding New Sign Images</strong></summary>
-
-1. **Prepare Image**: Ensure it's in `.jpg` format
-2. **Naming**: Use the Tamil character as filename (`அ.jpg`)
-3. **Location**: Place in `tamil_alphabets/` directory
-4. **Size**: Recommended 200x200px or higher
-
-</details>
-
-<details>
-<summary><strong>⏱️ Adjust Recording Duration</strong></summary>
+<summary><strong>📊 Required Columns</strong></summary>
 
 ```python
-# In record_and_transcribe() function
-duration = 5  # Change from 4 to 5 seconds
+# Input Features
+home_encoded     # Encoded home team ID
+away_encoded     # Encoded away team ID
+HTHG            # Home team half-time goals
+HTAG            # Away team half-time goals
+HS              # Home team shots
+AS              # Away team shots
+HST             # Home team shots on target
+AST             # Away team shots on target
+HR              # Home team red cards
+AR              # Away team red cards
+
+# Target Variable
+FTR             # Full-time result (H/D/A)
 ```
 
 </details>
 
 <details>
-<summary><strong>🎨 Theme Customization</strong></summary>
+<summary><strong>🎯 Prediction Classes</strong></summary>
+
+| Code | Meaning | Description |
+|------|---------|-------------|
+| **H** | Home Win | Home team victory |
+| **D** | Draw | Match ends in tie |
+| **A** | Away Win | Away team victory |
+
+</details>
+
+---
+
+## 🎨 **Sample Usage**
+
+<details>
+<summary><strong>⚽ Example Prediction Session</strong></summary>
 
 ```python
-# Background colors
-root.configure(bg="#your_color")
+# Input Example
+Home Team Encoded: 15
+Away Team Encoded: 8
+Home Team Half-Time Goals: 2
+Away Team Half-Time Goals: 0
+Home Team Shots: 18
+Away Team Shots: 12
+Home Team Shots on Target: 6
+Away Team Shots on Target: 4
+Home Team Red Cards: 0
+Away Team Red Cards: 1
 
-# Canvas styling  
-canvas = tk.Canvas(root, bg="#your_canvas_color", ...)
-
-# Text colors
-transcription_label = tk.Label(..., fg="#your_text_color", ...)
+# Output
+Predictions: ['Home Win']
+Predicted Probabilities: [[0.15, 0.25, 0.60]]
+# Away Win: 15%, Draw: 25%, Home Win: 60%
 ```
 
 </details>
+
+<details>
+<summary><strong>📊 Visualization Output</strong></summary>
+
+The system generates:
+- 📊 **Probability bar charts**
+- 📈 **Confidence intervals**
+- 🎯 **Prediction accuracy metrics**
+- 📉 **Model comparison plots**
+
+</details>
+
+---
+
+## 🛠️ **Advanced Features**
+
+<details>
+<summary><strong>💾 Model Export & Import</strong></summary>
+
+```python
+# Export trained model
+shouldExport = input('Do you want to export the model(s) (y / n) ? ')
+if shouldExport.strip().lower() == 'y':
+    dump(lr_classifier, 'exportedModels/lr')
+
+# Load saved model
+loaded_model = load('exportedModels/lr')
+predictions = loaded_model.predict(new_data)
+```
+
+</details>
+
+<details>
+<summary><strong>📊 Custom Visualizations</strong></summary>
+
+```python
+# Generate probability charts
+labels = ['Away Win', 'Draw', 'Home Win']
+plt.bar(x, probabilities, width=0.35)
+plt.title('Predicted Probabilities for Each Match')
+plt.xlabel('Outcome')
+plt.ylabel('Predicted Probability')
+```
+
+</details>
+
+---
+
+## 🎯 **Performance Optimization**
+
+### **🚀 Speed Improvements**
+- ⚡ Efficient data preprocessing
+- 🔄 Optimized model training
+- 💾 Model caching system
+- 📊 Vectorized predictions
+
+### **🎯 Accuracy Enhancement**
+- 📈 Feature engineering
+- 🔄 Cross-validation
+- 📊 Ensemble methods
+- 🎯 Hyperparameter tuning
 
 ---
 
@@ -239,13 +298,13 @@ transcription_label = tk.Label(..., fg="#your_text_color", ...)
 <details>
 <summary><strong>❌ Common Issues & Solutions</strong></summary>
 
-| Issue | Solution |
-|-------|----------|
-| **🎤 No audio detected** | Check microphone permissions & connection |
-| **🖼️ Missing sign images** | Verify `tamil_alphabets/` folder exists with proper naming |
-| **🐌 Slow performance** | Ensure stable internet for first-time model download |
-| **🔒 Token errors** | Verify Hugging Face token validity |
-| **💾 Memory issues** | Close other applications, restart if needed |
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| **📊 Dataset not found** | Missing CSV file | Ensure `season-1819.csv` exists |
+| **🔢 Encoding errors** | Invalid team names | Check team encoding consistency |
+| **💾 Model export fails** | Permission issues | Check directory write permissions |
+| **📈 Poor accuracy** | Insufficient data | Add more training samples |
+| **🎯 Prediction errors** | Invalid input format | Validate input data types |
 
 </details>
 
@@ -261,13 +320,20 @@ We welcome contributions! Here's how you can help:
 
 </div>
 
-### **Areas for Enhancement**
-- 🎯 Additional Tamil dialects support
-- 🖼️ Expand sign image database
-- ⚡ Performance optimizations
-- 🎨 UI/UX improvements
-- 📱 Mobile app version
-- 🌐 Web-based interface
+### **🎯 Areas for Enhancement**
+- 📊 Advanced feature engineering
+- 🤖 Deep learning models
+- 📱 Web dashboard interface
+- 🔄 Real-time data integration
+- 📈 Advanced visualization
+- 🎯 Multi-league support
+
+### **🔄 Development Workflow**
+1. Fork the repository
+2. Create feature branch
+3. Add tests for new features
+4. Submit pull request
+5. Code review process
 
 ---
 
@@ -275,15 +341,20 @@ We welcome contributions! Here's how you can help:
 
 <div align="center">
 
-[![License](https://img.shields.io/badge/License-Open_Source-blue?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 </div>
 
-### **Acknowledgments**
-- 🤗 **Hugging Face** - For providing the AI model infrastructure
-- 👨‍💻 **Amrrs** - For training the Tamil Wav2Vec2 model
-- 🤟 **Tamil Sign Language Community** - For language references
-- 💻 **Open Source Contributors** - For making this possible
+### **📊 Data Sources**
+- Football match statistics
+- Historical season data
+- Team performance metrics
+
+### **🤖 ML Libraries**
+- **Scikit-learn** - Machine learning algorithms
+- **Pandas** - Data manipulation
+- **NumPy** - Numerical computations
+- **Matplotlib** - Data visualization
 
 ---
 
@@ -297,31 +368,39 @@ We welcome contributions! Here's how you can help:
 timeline
     title Development Roadmap
     
-    Q4 2024 : Mobile App
-           : Web Interface
+    Q4 2024 : Real-time API
+           : Web Dashboard
     
-    Q1 2025 : Multi-dialect Support
-           : Performance Boost
+    Q1 2025 : Deep Learning Models
+           : Multi-league Support
     
-    Q2 2025 : Advanced ML Models
-           : Community Features
+    Q2 2025 : Mobile App
+           : Live Match Integration
 ```
 
 </div>
+
+### **🚀 Upcoming Features**
+- 🌐 **Web Interface** - Browser-based predictions
+- 📱 **Mobile App** - iOS/Android support
+- 🔄 **Live Data** - Real-time match integration
+- 🤖 **Advanced AI** - Neural networks & deep learning
+- 📊 **Enhanced Analytics** - Advanced statistics
+- 🎯 **Multi-Sport** - Expand beyond football
 
 ---
 
 <div align="center">
 
-## 💙 **Made with Love for Tamil Community**
+## ⚽ **Made for Football Enthusiasts**
 
 <p>
-<strong>Empowering communication • Breaking barriers • Connecting hearts</strong>
+<strong>Predicting the beautiful game • Data-driven insights • Advanced analytics</strong>
 </p>
 
 <p>
-<img src="https://img.shields.io/badge/Made_with-❤️-red?style=for-the-badge" alt="Made with Love">
-<img src="https://img.shields.io/badge/For-தமிழ்_Community-orange?style=for-the-badge" alt="Tamil Community">
+<img src="https://img.shields.io/badge/Made_with-⚽-green?style=for-the-badge" alt="Made with Football">
+<img src="https://img.shields.io/badge/For-Football_Fans-blue?style=for-the-badge" alt="Football Fans">
 </p>
 
 ---
