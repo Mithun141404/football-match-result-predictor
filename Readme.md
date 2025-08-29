@@ -15,8 +15,6 @@
   <strong>Predict football match outcomes with multiple ML algorithms and interactive visualizations</strong>
 </p>
 
-![Demo](https://via.placeholder.com/800x400/2c3e50/ecf0f1?text=Football+Match+Predictor+Dashboard)
-
 </div>
 
 ---
